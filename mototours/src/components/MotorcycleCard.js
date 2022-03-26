@@ -5,8 +5,8 @@ function MotorcycleCard ({motor}) {
 console.log(motor);
 return (
 <div className="motors" key={motor.id}>
-    <h4>{motor.Model}</h4>
-    <img src={motor.Image} alt={motor.id}/>
+    <> {motor.Model}</>
+    <img className="motors" src={motor.Image} alt={motor.id} />
 </div>
     );
 }

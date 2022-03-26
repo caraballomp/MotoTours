@@ -6,8 +6,8 @@ import MotorcycleCard from './MotorcycleCard';
 function MotorcycleContainer({motor}) {
     
 return (
-    <div> 
-{motor.map((motor) => <MotorcycleCard key={motor.id}  motor={motor} cardText="MotorcycleCard" />)}
+    <div className= "motor-container"> 
+{motor.map((motor) => <MotorcycleCard key={motor.id}  motor={motor}  />)}
 
 <MotorcycleButton />
     </div>
