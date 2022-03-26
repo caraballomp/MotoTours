@@ -1,11 +1,99 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+  "id": 1,
+  "Category": "",
+  "Model":"",
+  "Year":"",
+  "Power":"",
+  "Image":"",
+  "Lot":""
+    },
+    {
+  "id": 2,
+  "Category": "",
+  "Model":"",
+  "Year":"",
+  "Power":"",
+  "Image":"",
+  "Lot":""
+    },
+    {
+  "id": 3,
+  "Category": "",
+  "Model":"",
+  "Year":"",
+  "Power":"",
+  "Image":"",
+  "Lot":""
+  },
+{
+  "id": 4,
+  "Category": "",
+  "Model":"",
+  "Year":"",
+  "Power":"",
+  "Image":"",
+  "Lot":""
+    },
+    {
+  "id": 5,
+  "Category": "",
+  "Model":"",
+  "Year":"",
+  "Power":"",
+  "Image":"",
+  "Lot":""
+    },
+    {
+  "id": 6,
+  "Category": "",
+  "Model":"",
+  "Year":"",
+  "Power":"",
+  "Image":"",
+  "Lot":""
+  },
+  {
+  "id": 7,
+  "Category": "",
+  "Model":"",
+  "Year":"",
+  "Power":"",
+  "Image":"",
+  "Lot":""
+    },
+    {
+  "id": 8,
+  "Category": "",
+  "Model":"",
+  "Year":"",
+  "Power":"",
+  "Image":"",
+  "Lot":""
+    },
+    {
+  "id": 9,
+  "Category": "",
+  "Model":"",
+  "Year":"",
+  "Power":"",
+  "Image":"",
+  "Lot":""
+  },   
+  {
+  "id": 9,
+  "Category": "",
+  "Model":"",
+  "Year":"",
+  "Power":"",
+  "Image":"",
+  "Lot":""
     }
+
   ],
+
+
   "comments": [
     {
       "id": 1,
@@ -13,6 +101,8 @@
       "postId": 1
     }
   ],
+
+
   "profile": {
     "name": "typicode"
   }
