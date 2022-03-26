@@ -20,8 +20,8 @@
   flex-direction: column;
   justify-content: center;
   font-size: calc(30px + 2vmin);
+  font-family:"Gill Sans", sans-serif;
   color: grayscale;
-  font-style:oblique;
 }
 
 .App-link {

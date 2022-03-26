@@ -1,32 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header'
 import InfoContainer from './components/InfoContainer'
 import MotorcycleContainer from './components/MotorcycleContainer'
 
+
 function App() {
+const API = "http://localhost:3000/motor";
+
+const [ motor, setMotor ] = useState ([]);
+
+
+useEffect(() => {
+  fetch(API)
+  .then(res => res.json())
+  .then(data => {
+    setMotor(data);
+  });
+}, []);
+
+
+
   return (
     <div className="App">
     <Header />
     <InfoContainer />
-    <MotorcycleContainer />
+    <MotorcycleContainer motor={motor} />
     </div>
   );
-}
+};
 
 export default App;
-
-// <header className="App-header">
-// <img src={logo} className="App-logo" alt="logo" />
-// <p>
-//   Edit <code>src/App.js</code> and save to reload.
-// </p>
-// <a
-//   className="App-link"
-//   href="https://reactjs.org"
-//   target="_blank"
-//   rel="noopener noreferrer"
-// >
-//   Learn React
-// </a>
-// </header>
