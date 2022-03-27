@@ -1,16 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 import MotorcycleButton from './MotorcycleButton';
 import MotorcycleCard from './MotorcycleCard';
 
 
 function MotorcycleContainer({motor}) {   
-    const [index, setIndex] = useState (1);
 
 return (
     <div className= "motor-container"> 
-{motor.map((motor) => <MotorcycleCard key={index}  motor={motor}  />)}
+{motor.map((motor) => <MotorcycleCard key={motor.id}  motor={motor}  />)}
 
-<MotorcycleButton onClick={setIndex (index + 1)} />
+<MotorcycleButton />
     </div>
     );
     
