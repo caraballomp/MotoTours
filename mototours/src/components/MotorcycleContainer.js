@@ -3,13 +3,13 @@ import MotorcycleButton from './MotorcycleButton';
 import MotorcycleCard from './MotorcycleCard';
 
 
-function MotorcycleContainer({motor}) {   
+function MotorcycleContainer({motor, nextBikes}) {   
 
 return (
     <div className= "motor-container"> 
 {motor.map((motor) => <MotorcycleCard key={motor.id}  motor={motor}  />)}
 
-<MotorcycleButton />
+<MotorcycleButton onClickRotate = {nextBikes}/>
     </div>
     );
     

@@ -19,10 +19,12 @@
   height:auto;
 }
 
-.motor-container{
-  display: flex;
-  width: 70rem;
-}
+.motor-container {
+    grid-area: bt;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
 .active-bike{
   display: block;
 }
