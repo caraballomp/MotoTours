@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 
-function MotorcycleCard ({motor}) {
-console.log(motor);
+function MotorcycleCard (prop) {
+
+const [i , setI] = useState (1);
+    
 return (
-<div className="motors" key={motor.id}>
-    <> {motor.Model}</>
-    <img className="motors" src={motor.Image} alt={motor.id} />
+<div key={prop.motor.id} >
+    <img className= {prop.key === i + 1 ? "motors active-bike" : "motors"} src={prop.motor.Image} alt={prop.motor.id} />
+    <p>{prop.motor.key}</p>
 </div>
     );
 }
@@ -14,10 +16,3 @@ return (
 
 export default MotorcycleCard;
 
-// "id": 3,
-// "Category":"Adventure Bike",
-// "Model":"YAMAHA TENERE 700",
-// "Year":"2019",
-// "Power":"72.1 hp",
-// "Image":"https://monimoto.com/media/Yamaha-Tenere-700.jpg",
-// "Lot":""

@@ -1,8 +1,7 @@
-.App {
-  text-align: center;
-}
+
 
 .App-header {
+  text-align: center;
   background-color: lightslategray;
   min-height: 25vh;
   display: flex;
@@ -13,17 +12,20 @@
   color: grayscale;
 }
 
+.motors{
+  position:relative;
+  width:150px;
+  min-height: 150px;
+  height:auto;
+}
 
-.motors-container {
-  position: relative;
-  height: 100vh;
+.motor-container{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 70rem;
 }
-.motors > img{
-  border-radius: 5px;
-  max-height: 150px;
-  max-width: 150px;
+.active-bike{
+  display: block;
 }
-
+.inactive-bike{
+  display: none;
+}
