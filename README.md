@@ -17,9 +17,9 @@ User Story
 
 *As a User*<br>
   I want to expand a motorcycle image with a click.<br>
-  So that I can reveal additional information about that bike, including:
+  So that I can reveal additional information about that bike, including:<br>
   
-Category
+Category<br>
   1. Make/model
   2. Year
   3. Power
