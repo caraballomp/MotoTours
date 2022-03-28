@@ -1,21 +1,21 @@
 User Story
   Authors: John Naden, Michelle Caraballo
 
-*Pitch*
+*Pitch*<br>
   MotoTours is an interactive Web App that allows users to browse through photos of motorcycle options with the ability to select a bike    and display additional information and a recommended touring routes. 
 
 
-*As a User*
+*As a User*<br>
   I want to view a selection of motorcycle images. <br>
   So that I can explore different styles of bikes
 
 
-*As a User*
+*As a User*<br>
   I want to click a “rotate” button.<br>
   So that I can load additional motorcycle options to view
 
 
-*As a User*
+*As a User*<br>
   I want to expand a motorcycle image with a click.<br>
   So that I can reveal additional information about that bike, including:
   
@@ -26,12 +26,12 @@ Category
   4. Touring Route 
 
 
-*As a User*
+*As a User*<br>
   I want to click on a bike.<br>
   So that I can reveal a route that is appropriate for that particular bike
 
 
-*As a User*
+*As a User*<br>
   I want to access a review form.<br>
   So that I can leave a review or comment about that particular bike
 
