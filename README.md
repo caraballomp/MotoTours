@@ -7,13 +7,12 @@ Pitch
 
 As a User:
 
-  I want to view a selection of motorcycle images. 
+  I want to view a selection of motorcycle images. <br>
   So that I can explore different styles of bikes
 
 
 As a User:
-  I want to click a “rotate” button
-  
+  I want to click a “rotate” button. 
   So that I can load additional motorcycle options to view
 
 
