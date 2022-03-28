@@ -8,7 +8,6 @@ Pitch
 As a User:
 
   I want to view a selection of motorcycle images. 
-  
   So that I can explore different styles of bikes
 
 
