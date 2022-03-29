@@ -1,6 +1,6 @@
 
 
-.App-header {
+/* .App-header {
   text-align: center;
   background-color: lightslategray;
   min-height: 25vh;
@@ -10,7 +10,7 @@
   font-size: calc(30px + 2vmin);
   font-family:"Gill Sans", sans-serif;
   color: grayscale;
-}
+} */
 
 .motors{
   position:relative;
@@ -30,4 +30,30 @@
 }
 .inactive-bike{
   display: none;
+}
+
+.mainhead {
+  background-image: url("../public/E4BB752E-F98D-436D-AF7A-17DC821AE5A3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white
+}
+
+.mainhead h2 {
+ font-weight: bold;
+ color: white;
+}
+
+.bikeInfoImage{
+  position:relative;
+  width:150px;
+  min-height: 150px;
+  height:auto;
+}
+
+.tripInfoImage{
+  position:relative;
+  width:150px;
+  min-height: 150px;
+  height:auto;
 }
