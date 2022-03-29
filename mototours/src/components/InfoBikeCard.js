@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function InfoBikeCard({moto, recommendedRoute, }){
+function InfoBikeCard({moto, recommendedRoute }){
     return(
         <div className="container">
         <div className="bike-card">

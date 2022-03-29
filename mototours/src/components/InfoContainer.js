@@ -1,8 +1,9 @@
 import React from 'react';
 import InfoBikeCard from './InfoBikeCard';
 import InfoTripCard from './InfoTripCard';
+import NewCommentForm from './NewCommentForm';
 
-function InfoContainer ({motor, motoTrip, recommendedRoute}) {
+function InfoContainer ({motor, motoTrip, recommendedRoute, comment}) {
 
 
     return (
@@ -14,6 +15,7 @@ function InfoContainer ({motor, motoTrip, recommendedRoute}) {
                     </div>
                     <div className="six columns">
                         {motoTrip.map(moto=><InfoTripCard key={moto.id} moto={moto}/>)}
+                    <NewCommentForm comment ={comment} />
                     </div>
             </div>
             </div>
