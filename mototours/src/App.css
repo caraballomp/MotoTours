@@ -46,14 +46,20 @@
 
 .bikeInfoImage{
   position:relative;
-  width:150px;
-  min-height: 150px;
+  width:500px;
+  min-height: 350px;
   height:auto;
+  float: left;
 }
 
 .tripInfoImage{
   position:relative;
-  width:150px;
-  min-height: 150px;
+  width: 616px;
+  min-height: 422px;
   height:auto;
+}
+
+.trip-info{
+  position: flex-center;
+
 }

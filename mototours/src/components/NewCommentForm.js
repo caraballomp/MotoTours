@@ -1,14 +1,14 @@
 import React, {useState} from "react";
 
-function NewCommentForm({ addComment }) {
+function NewCommentForm() {
 
 const [comment, setComment] = useState("");
+
 
 
 function handleComment(e) {
       setComment(e.target.value);
     }
-
 
     const handleSubmit = (e) => {
       e.preventDefault()
@@ -16,7 +16,7 @@ function handleComment(e) {
       const formData ={
       comment,
       }
-      fetch("http://localhost:3001/comments", {
+      fetch("http://localhost:3001/comment", {
         method: 'POST',
         headers:{
           'Content-Type':'application/json'
@@ -24,12 +24,12 @@ function handleComment(e) {
         body: JSON.stringify(formData)
       })
       .then((r) => r.json())
-      .then(newComment => {addComment(newComment)})
+      .then(setComment())
       };
     
 
     return (
-      <form className="" onSubmit= {handleSubmit} >
+      <form className="" onSubmit={handleSubmit} >
   <textarea
           placeholder="Write experience here"
           rows={10}
