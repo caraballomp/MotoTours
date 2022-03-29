@@ -1,13 +1,14 @@
 import React from 'react';
 
 
-function MotorcycleCard (prop) {
+function MotorcycleCard ({motor, handleClick}) {
 
 
 return (
-<div key={prop.motor.id} >
-    <img className= "motors" src={prop.motor.Image} alt={prop.motor.id} />
-    <p>{prop.motor.key}</p>
+<div key={motor.id} 
+    onClick={()=>handleClick(motor.id)}>
+    <img className= "motors" src={motor.Image} alt={motor.id} />
+    <p>{motor.key}</p>
 </div>
     );
 }

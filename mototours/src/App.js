@@ -6,7 +6,7 @@ import Header from './components/Header'
 import InfoContainer from './components/InfoContainer'
 import MotorcycleContainer from './components/MotorcycleContainer'
 
-const display = 5;
+const display = 6;
 
 
 function App() {
@@ -28,12 +28,17 @@ function nextBikes() {
   setStartBikes(startBikes + display)
 }
 
-
+function selectBikes(id){
+  setMotor(motor.map(moto => id=== moto.id ? {...moto, selected:true} : moto))
+}
+function recommendedRoute(id) {
+  setMotor(motor.map(moto => id === moto.id ? {...moto, selectedForTrip:true} : moto))
+}
   return (
-    <div className="container">
-    <Header />
-    <InfoContainer />
-    <MotorcycleContainer motor={motor.slice(startBikes, startBikes + display)} nextBikes={nextBikes} />
+    <div>
+      <Header />
+      <InfoContainer motor={motor.filter(moto=>moto.selected)} recommendedRoute={recommendedRoute} motoTrip={motor.filter(moto=>moto.selectedForTrip)}/>
+      <MotorcycleContainer motor={motor.slice(startBikes, startBikes + display)} nextBikes={nextBikes} handleClick={selectBikes} />
     </div>
   );
 };
