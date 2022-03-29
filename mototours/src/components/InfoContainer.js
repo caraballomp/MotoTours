@@ -9,12 +9,13 @@ function InfoContainer ({motor, motoTrip, recommendedRoute}) {
     return (
         <div className="bikeinfo">
             <div className="container">
-                <div className="row">
-                    <div className="six columns">
+                <div class="row">
+                    <div class="six columns">
                         {motor.map(moto=><InfoBikeCard key={moto.id} moto={moto} recommendedRoute={recommendedRoute}/>)}
                     </div>
-                    <div className="six columns">
-                        {motoTrip.map(moto=><InfoTripCard key={moto.id} moto={moto} />)}
+                
+                    <div class="six columns">
+                        {motoTrip.map(moto=><InfoTripCard key={moto.id} name={moto.Title} moto={moto} />)}
                     </div>
             </div>
             </div>
