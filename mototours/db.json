@@ -8,7 +8,8 @@
       "Power": "20 hp",
       "Image": "https://ridermagazine.com/wp-content/uploads/2021/04/Royal-Enfield-Meteor-350-beauty-L.jpg",
       "Route": "https://www.rd.com/wp-content/uploads/2021/02/GettyImages-1283247302.jpg?resize=1536,1152",
-      "Title": "TAIL OF THE DRAGON, US 129"
+      "Title": "TAIL OF THE DRAGON, US 129",
+      "Comment": ""
     },
     {
       "id": 2,
@@ -49,7 +50,6 @@
       "Image": "https://monimoto.com/media/2021-BMW-R-1250-GS.jpg",
       "Route": "https://static.sena.com/images/default-source/blog-posts-images/scenic-images/animasforks.jpg?sfvrsn=97b70447_2",
       "Title": "Alpine Loop Trail, Colorado"
-
     },
     {
       "id": 6,
@@ -100,16 +100,6 @@
       "Image": "https://monimoto.com/media/Harley-Davidson-Pan-America-1250.jpg",
       "Route": "https://static01.nyt.com/images/2015/11/08/travel/08DALTON/08DALTON-superJumbo.jpg",
       "Title": "Dalton Highway, Alaska"
-    }
-  ],
-  "comment": [
-    {
-      "id": 1,
-      "body": "add review"
-    },
-    {
-      "comment": "",
-      "id": 2
     }
   ]
 }

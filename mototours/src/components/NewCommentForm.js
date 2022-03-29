@@ -16,7 +16,7 @@ function handleComment(e) {
       const formData ={
       comment,
       }
-      fetch("http://localhost:3001/comment", {
+      fetch("http://localhost:3001/motor", {
         method: 'POST',
         headers:{
           'Content-Type':'application/json'
