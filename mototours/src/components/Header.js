@@ -5,7 +5,7 @@ function Header () {
         <div className="mainhead">
             <div className="container"> 
                 <div className="row"> 
-                    <div className="six columns">""</div>
+                    <div className="six columns">.</div>
                     <div className="six columns">
                         <h2>MotoTours</h2>
                         <h1>Find you bike, and your road</h1>

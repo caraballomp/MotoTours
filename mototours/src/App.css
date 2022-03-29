@@ -13,16 +13,21 @@
 } */
 
 .motors{
-  position:relative;
-  width:150px;
-  min-height: 150px;
-  height:auto;
+  height: 175px;
+  max-height: 250px;
+  width: auto;
+  max-width: 250px;
+  display:flex;
+  align-items:space-between;
+  justify-content:space-between;
+  flex-wrap:wrap;
 }
 
 .motor-container {
     grid-area: bt;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
   }
 
 .active-bike{
@@ -34,6 +39,7 @@
 
 .mainhead {
   background-image: url("../public/E4BB752E-F98D-436D-AF7A-17DC821AE5A3.jpeg");
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   color: white
@@ -45,21 +51,40 @@
 }
 
 .bikeInfoImage{
-  position:relative;
-  width:500px;
-  min-height: 350px;
-  height:auto;
-  float: left;
+  height: 400px;
+  max-height: 500px;
+  width: 450px;
+  max-width: 500px;
+  display:flex;
+  align-items:space-between;
+  justify-content:space-between;
+  flex-wrap:wrap;
 }
 
 .tripInfoImage{
-  position:relative;
-  width: 616px;
-  min-height: 422px;
-  height:auto;
+  height: 400px;
+  max-height: 500px;
+  width: 450px;
+  max-width: 500px;
+  display:flex;
+  align-items:space-between;
+  justify-content:space-between;
+  flex-wrap:wrap;
 }
 
 .trip-info{
   position: flex-center;
 
 }
+
+.divider {
+  height: 15px;
+  width: 100%;
+  background-color: black;
+}
+
+/* .bikeInfo {
+  height: 325px;
+  width: 100%;
+  background-color: white;
+} */
