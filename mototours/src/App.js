@@ -6,7 +6,9 @@ import Header from './components/Header'
 import InfoContainer from './components/InfoContainer'
 import MotorcycleContainer from './components/MotorcycleContainer'
 
+
 const display = 5;
+
 
 
 function App() {

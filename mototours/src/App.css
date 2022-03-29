@@ -13,6 +13,7 @@
 } */
 
 .motors{
+
   height: 175px;
   max-height: 250px;
   width: auto;
@@ -41,7 +42,7 @@
   background-image: url("../public/E4BB752E-F98D-436D-AF7A-17DC821AE5A3.jpeg");
   height: 500px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100;
   color: white
 }
 
@@ -62,6 +63,7 @@
 }
 
 .tripInfoImage{
+
   height: 400px;
   max-height: 500px;
   width: 450px;
@@ -73,7 +75,7 @@
 }
 
 .trip-info{
-  position: flex-center;
+  position:relative;
 
 }
 

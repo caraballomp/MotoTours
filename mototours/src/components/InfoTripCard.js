@@ -1,17 +1,18 @@
 import React from "react";
 import NewCommentForm from "./NewCommentForm"
 
-function InfoTripCard({moto, comment}){
-
-    function addComment(){
-
-    }
+function InfoTripCard({moto}){
 
 
     return (
         <div className="trip-info">
+        <div className="row">
             <img className="tripInfoImage" src={moto.Route}></img>
-            <NewCommentForm comment={comment} />
+            <h3>{moto.Title} </h3> 
+            
+            <NewCommentForm key= {moto.id} moto={moto.comment} />
+            <p>{moto.comment}</p>
+            </div>
         </div>
     )
 }
