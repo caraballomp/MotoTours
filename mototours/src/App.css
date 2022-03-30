@@ -42,13 +42,25 @@
   background-image: url("../public/E4BB752E-F98D-436D-AF7A-17DC821AE5A3.jpeg");
   height: 500px;
   background-repeat: no-repeat;
-  background-size: 100;
+  background-size: 100%;
   color: white
+}
+.title{
+  color: #4db1bc;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  font-size: 10rem;
+  text-shadow: 0 0 20px #2d9da9;
+  text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
 }
 
 .mainhead h2 {
- font-weight: bold;
- color: white;
+  font-weight: bold;
+  color: white;
 }
 
 .bikeInfoImage{
@@ -60,6 +72,7 @@
   align-items:space-between;
   justify-content:space-between;
   flex-wrap:wrap;
+
 }
 
 .tripInfoImage{
