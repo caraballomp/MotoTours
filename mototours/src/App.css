@@ -85,8 +85,10 @@
   background-color: black;
 }
 
-/* .bikeInfo {
-  height: 325px;
-  width: 100%;
-  background-color: white;
-} */
+.noClickBike {
+  pointer-events: none;
+} 
+
+.clickBike {
+  pointer-events: ""
+}

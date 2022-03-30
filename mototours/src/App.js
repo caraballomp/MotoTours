@@ -16,6 +16,12 @@ const API = "http://localhost:3000/motor";
 
 const [ motor, setMotor ] = useState ([]);
 const [startBikes, setStartBikes] = useState([]);
+const [isDisabled, setIsDisabled] = useState(false)
+
+
+
+
+
 
 
 useEffect(() => {
@@ -26,27 +32,47 @@ useEffect(() => {
   });
 }, []);
 
+
+
 function nextBikes() {
   setStartBikes((startBikes + display) % motor.length)
 }
 
+
 function selectBikes(id){
   setMotor(motor.map(moto => id=== moto.id ? {...moto, selected:true} : moto))
+
 }
 function resetBikes(id){
-  console.log("hello")
-  setMotor(motor.map(moto => id=== moto.id ? {...moto, selected:false} : moto))
+  setMotor(motor.map(moto => id=== moto.id ? {...moto, selected:false, selectedForTrip:false} : moto))
 }
 
 function recommendedRoute(id) {
   setMotor(motor.map(moto => id === moto.id ? {...moto, selectedForTrip:true} : moto))
 }
+function disableClick(){
+  setIsDisabled((isDisabled)=>!isDisabled)
+}
+const className = isDisabled ? 'noClickBike' : 'clickBike';
+ 
   return (
     <div>
       <Header />
       <div className="divider"></div>
-      <InfoContainer motor={motor.filter(moto=>moto.selected)} recommendedRoute={recommendedRoute} motoTrip={motor.filter(moto=>moto.selectedForTrip)} resetBikes={resetBikes}/>
-      <MotorcycleContainer motor={motor.slice(startBikes, startBikes + display)} nextBikes={nextBikes} handleClick={selectBikes} />
+      <InfoContainer motor={
+        motor.filter(moto=>moto.selected)} 
+        recommendedRoute={recommendedRoute} 
+        motoTrip={motor.filter(moto=>moto.selectedForTrip)} 
+        resetBikes={resetBikes}
+        disableClick={disableClick}
+        />
+      <MotorcycleContainer 
+        motor={motor.slice(startBikes, startBikes + display)} 
+        nextBikes={nextBikes} 
+        handleClick={selectBikes}
+        disableClick={disableClick}
+        className={className}
+        />
     </div>
   );
 };

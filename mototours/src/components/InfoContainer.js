@@ -3,7 +3,7 @@ import InfoBikeCard from './InfoBikeCard';
 import InfoTripCard from './InfoTripCard';
 
 
-function InfoContainer ({motor, motoTrip, recommendedRoute, resetBikes}) {
+function InfoContainer ({motor, motoTrip, recommendedRoute, resetBikes, disableClick}) {
 
 
     return (
@@ -12,12 +12,12 @@ function InfoContainer ({motor, motoTrip, recommendedRoute, resetBikes}) {
 
                 <div className="row">
                     <div className="six columns">
-                        {motor.map(moto=><InfoBikeCard key={moto.id} moto={moto} resetBikes={resetBikes} recommendedRoute={recommendedRoute}/>)}
+                        {motor.map(moto=><InfoBikeCard key={moto.id} moto={moto} resetBikes={resetBikes} recommendedRoute={recommendedRoute} disableClick={disableClick} />)}
 
                     </div>
                 
-                    <div class="six columns">
-                        {motoTrip.map(moto=><InfoTripCard key={moto.id} name={moto.Title} moto={moto} />)}
+                    <div className="six columns">
+                        {motoTrip.map(moto=><InfoTripCard key={moto.id} name={moto.Title} moto={moto} resetBikes={resetBikes} />)}
                     </div>
             </div>
             </div>
