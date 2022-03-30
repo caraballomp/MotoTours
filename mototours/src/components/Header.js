@@ -7,7 +7,8 @@ function Header () {
                 <div className="row"> 
                     <div className="six columns">.</div>
                     <div className="six columns">
-                        <h2>MotoTours</h2>
+                        <h2 className="title"> MotoTours</h2>
+                        <h4>   from......</h4>
                         <h1>Find you bike, and your road</h1>
                         <p>Often beneath the wave, wide from this ledge
                             The dice of drowned men’s bones he saw bequeath
