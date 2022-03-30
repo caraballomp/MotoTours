@@ -1,17 +1,4 @@
 
-
-/* .App-header {
-  text-align: center;
-  background-color: lightslategray;
-  min-height: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(30px + 2vmin);
-  font-family:"Gill Sans", sans-serif;
-  color: grayscale;
-} */
-
 .motors{
 
   height: 175px;
@@ -24,6 +11,11 @@
   flex-wrap:wrap;
 }
 
+
+.container-info{
+  background-color:#fffafa	;
+  background-size: 100%;
+}
 .motor-container {
     grid-area: bt;
     display: flex;
@@ -54,9 +46,9 @@
   align-items: center;
   justify-items: center;
   font-size: 10rem;
-  text-shadow: 0 0 20px #2d9da9;
-  text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
-}
+  text-shadow: 0 0 50px #2d9da9;
+  text-shadow: 0 0 30px #34b3c1, 0 0 60px #4dbbc7;}
+
 
 .mainhead h2 {
   font-weight: bold;
@@ -82,6 +74,13 @@
   width: 450px;
   max-width: 500px;
   display:flex;
+  align-items:space-between;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.review{
+  display:grid;
   align-items:space-between;
   justify-content:space-between;
   flex-wrap:wrap;
