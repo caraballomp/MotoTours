@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function InfoBikeCard({moto, recommendedRoute, resetBikes }){
+function InfoBikeCard({moto, recommendedRoute, resetBikes, disableClick }){
     return(
         <div className="container">
         <div className="bike-card">
@@ -13,9 +13,9 @@ function InfoBikeCard({moto, recommendedRoute, resetBikes }){
                 <li>Category: {moto.Category}</li> 
             </ul>
             <button className="button"
-            onClick={()=>recommendedRoute(moto.id)}>Recommended Roads</button>
+            onClick={()=>recommendedRoute(moto.id)}>Recommended Road</button>
             <button className="button"
-            onClick={()=> {resetBikes(moto.id)}}>Reset</button>
+            onClick={()=> {resetBikes(moto.id); disableClick()}}>Reset</button>
         </div>
         </div>
     )
