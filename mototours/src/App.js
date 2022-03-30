@@ -12,16 +12,11 @@ const display = 5;
 
 
 function App() {
-const API = "http://localhost:3000/motor";
+const API = "http://localhost:3001/motor";
 
 const [ motor, setMotor ] = useState ([]);
 const [startBikes, setStartBikes] = useState([]);
 const [isDisabled, setIsDisabled] = useState(false)
-
-
-
-
-
 
 
 useEffect(() => {
