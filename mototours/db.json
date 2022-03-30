@@ -19,7 +19,8 @@
       "Power": "81 hp",
       "Image": "https://monimoto.com/media/Triumph-Trident-660.jpg",
       "Route": "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_6158366081001_6158365209001-vs.jpg?pubId=5104226627001&videoId=6158365209001",
-      "Title": "Pan American Highway, South Peru"
+      "Title": "Pan American Highway, South Peru",
+      "Comment": ""
     },
     {
       "id": 3,
@@ -29,7 +30,8 @@
       "Power": "72.1 hp",
       "Image": "https://monimoto.com/media/Yamaha-Tenere-700.jpg",
       "Route": "https://www.overlandexpo.com/wp-content/uploads/2021/05/whipsaw-1024x498.jpg",
-      "Title": "Whipsaw Trail, British Columbia"
+      "Title": "Whipsaw Trail, British Columbia",
+      "Comment": ""
     },
     {
       "id": 4,
@@ -39,7 +41,8 @@
       "Power": "105 hp",
       "Image": "https://monimoto.com/media/KTM-890-Adventure.jpg",
       "Route": "https://ca-times.brightspotcdn.com/dims4/default/dd7ac2a/2147483647/strip/true/crop/3600x1890+0+115/resize/1200x630!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F2d%2F1f%2F942e68014090aab8922317ab5fe8%2Fla-photos-1staff-512907-mojave-roadtrip-brv-158.JPG",
-      "Title": "Mojave Road, California and Arizona"
+      "Title": "Mojave Road, California and Arizona",
+      "Comment": ""
     },
     {
       "id": 5,
@@ -49,7 +52,8 @@
       "Power": "136 hp",
       "Image": "https://monimoto.com/media/2021-BMW-R-1250-GS.jpg",
       "Route": "https://static.sena.com/images/default-source/blog-posts-images/scenic-images/animasforks.jpg?sfvrsn=97b70447_2",
-      "Title": "Alpine Loop Trail, Colorado"
+      "Title": "Alpine Loop Trail, Colorado",
+      "Comment": ""
     },
     {
       "id": 6,
@@ -59,7 +63,8 @@
       "Power": "100 hp",
       "Image": "https://monimoto.com/media/Aprilia-RS-660.jpg",
       "Route": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStYitaNLRvi1dg7hJS3hWgnQiNk4xCuCUwCg&usqp=CAU",
-      "Title": "Fjordland, Norway "
+      "Title": "Fjordland, Norway ",
+      "Comment": ""
     },
     {
       "id": 7,
@@ -69,7 +74,8 @@
       "Power": "200 hp",
       "Image": "https://monimoto.com/media/2021-Kawasaki-Z-H2.jpg",
       "Route": "https://arzotravels.com/wp-content/uploads/2020/02/Street-in-Croatia-driving.jpg",
-      "Title": "Croatia roads"
+      "Title": "Croatia roads",
+      "Comment": ""
     },
     {
       "id": 8,
@@ -79,7 +85,8 @@
       "Power": "169.9 hp",
       "Image": "https://monimoto.com/media/Ducati-Multistrada-V4.jpg",
       "Route": "https://tsoura.com/wp-content/uploads/2019/03/841/emilia-romagna-intro.jpg",
-      "Title": "Emilia-Romagna"
+      "Title": "Emilia-Romagna",
+      "Comment": ""
     },
     {
       "id": 9,
@@ -89,7 +96,8 @@
       "Power": "110 hp",
       "Image": "https://monimoto.com/media/2021-Zero-SRS.jpg",
       "Route": "https://robbreport.com/wp-content/uploads/2020/01/4.jpg",
-      "Title": "South of Thailand"
+      "Title": "South of Thailand",
+      "Comment": ""
     },
     {
       "id": 10,
@@ -99,7 +107,8 @@
       "Power": "150 hp",
       "Image": "https://monimoto.com/media/Harley-Davidson-Pan-America-1250.jpg",
       "Route": "https://static01.nyt.com/images/2015/11/08/travel/08DALTON/08DALTON-superJumbo.jpg",
-      "Title": "Dalton Highway, Alaska"
+      "Title": "Dalton Highway, Alaska",
+      "Comment": ""
     }
   ]
 }
