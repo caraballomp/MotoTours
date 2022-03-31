@@ -1,3 +1,25 @@
+.appDark{
+  /* --font-color: rgb(255, 255, 255);
+  --background-color:rgb(50, 50, 50);
+  --background--light: rgb(80, 80, 80);
+  transition: all 0.4s; */
+
+background-color: black;
+/* grid-area: bt;
+display: flex;
+justify-content: space-evenly;
+width: 100%; */
+}
+
+.appLight{
+
+background-color: mintcream;
+/* grid-area: bt;
+display: flex;
+justify-content: space-evenly;
+width: 100%; */
+}
+
 
 .motors{
 
@@ -13,9 +35,10 @@
 
 
 .container-info{
-  background-color:#f5fffa	;
+  background-color:#fffafa	;
   background-size: 100%;
 }
+
 .motor-container {
     grid-area: bt;
     display: flex;
@@ -37,6 +60,7 @@
   background-size: 100%;
   color: white
 }
+
 .title{
   color: #4db1bc;
   margin: 0;
@@ -91,11 +115,9 @@
 
 }
 
-.divider {
-  height: 15px;
-  width: 100%;
-  background-color: black;
-}
+/* .divider {
+ 
+} */
 
 .noClickBike {
   pointer-events: none;
