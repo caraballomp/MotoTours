@@ -35,14 +35,14 @@ function handleComment(e) {
 
     return (
       <form className="review" onSubmit={handleSubmit} >
-      <label>Review</label>
+      <p>{comment}</p>  
   <textarea 
           placeholder="Write experience here"
           rows={10}
           onChange={handleComment}
         />
         <div> <input type="submit" value="Submit experience" />
-        <p>{comment}</p>  
+      
         </div>
       </form>
     );

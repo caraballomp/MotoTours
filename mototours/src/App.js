@@ -17,6 +17,7 @@ const API = "http://localhost:3001/motor";
 const [ motor, setMotor ] = useState ([]);
 const [startBikes, setStartBikes] = useState([]);
 const [isDisabled, setIsDisabled] = useState(false)
+const [darkMode, setDarkMode] = useState(false);
 
 
 useEffect(() => {
@@ -27,6 +28,10 @@ useEffect(() => {
   });
 }, []);
 
+
+function handleClick (){
+setDarkMode((darkMode) => !darkMode);
+}
 
 
 function nextBikes() {
@@ -49,11 +54,15 @@ function disableClick(){
   setIsDisabled((isDisabled)=>!isDisabled)
 }
 const className = isDisabled ? 'noClickBike' : 'clickBike';
- 
+const appClass = darkMode ? "appDark" : "appLight";
+const buttonText= darkMode ? "Dark" : "Light";
+
+
   return (
-    <div>
+    <div className = {appClass}>
+      <button onClick={handleClick} > {buttonText} Mode</button>
       <Header />
-      <div className="divider"></div>
+      <div></div>
       <InfoContainer motor={
         motor.filter(moto=>moto.selected)} 
         recommendedRoute={recommendedRoute} 
@@ -67,6 +76,7 @@ const className = isDisabled ? 'noClickBike' : 'clickBike';
         handleClick={selectBikes}
         disableClick={disableClick}
         className={className}
+        appClass={appClass}
         />
     </div>
   );
