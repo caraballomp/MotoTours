@@ -54,7 +54,6 @@ function App() {
   function disableClick(){
     setIsDisabled((isDisabled)=>!isDisabled)
   }
-  const className = isDisabled ? 'noClickBike' : 'clickBike';
   
   function addComment(newComment, id){
     setMotor(motor.map(moto => id === motor.id ? {...moto, comment:{newComment}} : moto)
@@ -79,6 +78,7 @@ function App() {
         motoTrip={motor.filter(moto=>moto.selectedForTrip)} 
         resetBikes={resetBikes}
         disableClick={disableClick}
+        addComment={addComment}
         />
       <MotorcycleContainer 
         motor={motor.slice(startBikes, startBikes + display)} 

@@ -41,12 +41,13 @@ function handleSubmit(e) {
 
     return (
       <form className="new-comment-form" onSubmit={handleSubmit} >
-      <label>Review</label>
+      <label>Reviews</label>
+      <textarea 
           placeholder="Write experience here"
           rows={10}
           value={comment}
           onChange={handleComment}
-        />
+          />
         <div> <input type="submit" value="Submit experience" />
       
         </div>
