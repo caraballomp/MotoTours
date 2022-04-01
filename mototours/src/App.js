@@ -12,50 +12,60 @@ const display = 5;
 
 
 function App() {
-const API = "http://localhost:3001/motor";
+  
+  
+  const API = "http://localhost:3001/motor";
 
-const [ motor, setMotor ] = useState ([]);
-const [startBikes, setStartBikes] = useState([]);
-const [isDisabled, setIsDisabled] = useState(false)
-const [darkMode, setDarkMode] = useState(false);
-
-
-useEffect(() => {
-  fetch(API)
-  .then(res => res.json())
-  .then(data => {
-    setMotor(data);
-  });
-}, []);
+  const [ motor, setMotor ] = useState ([]);
+  const [startBikes, setStartBikes] = useState([]);
+  const [isDisabled, setIsDisabled] = useState(false)
+  const [darkMode, setDarkMode] = useState(false);
 
 
-function handleClick (){
-setDarkMode((darkMode) => !darkMode);
-}
+  useEffect(() => {
+    fetch(API)
+    .then(res => res.json())
+    .then(data => {
+      setMotor(data);
+    });
+  }, []);
 
 
-function nextBikes() {
-  setStartBikes((startBikes + display) % motor.length)
-}
+  function handleClick (){
+  setDarkMode((darkMode) => !darkMode);
+  } 
+  
+  function nextBikes() {
+    setStartBikes((startBikes + display) % motor.length)
+  }
 
 
-function selectBikes(id){
-  setMotor(motor.map(moto => id=== moto.id ? {...moto, selected:true} : moto))
+  function selectBikes(id){
+    setMotor(motor.map(moto => id=== moto.id ? {...moto, selected:true} : moto))
 
-}
-function resetBikes(id){
-  setMotor(motor.map(moto => id=== moto.id ? {...moto, selected:false, selectedForTrip:false} : moto))
-}
+  }
+  function resetBikes(id){
+    setMotor(motor.map(moto => id=== moto.id ? {...moto, selected:false, selectedForTrip:false} : moto))
+  }
 
-function recommendedRoute(id) {
-  setMotor(motor.map(moto => id === moto.id ? {...moto, selectedForTrip:true} : moto))
-}
-function disableClick(){
-  setIsDisabled((isDisabled)=>!isDisabled)
-}
-const className = isDisabled ? 'noClickBike' : 'clickBike';
-const appClass = darkMode ? "appDark" : "appLight";
-const buttonText= darkMode ? "Dark" : "Light";
+  function recommendedRoute(id) {
+    setMotor(motor.map(moto => id === moto.id ? {...moto, selectedForTrip:true} : moto))
+  }
+  function disableClick(){
+    setIsDisabled((isDisabled)=>!isDisabled)
+  }
+  const className = isDisabled ? 'noClickBike' : 'clickBike';
+  
+  function addComment(newComment, id){
+    setMotor(motor.map(moto => id === motor.id ? {...moto, comment:{newComment}} : moto)
+    )}
+
+  
+  const className = isDisabled ? 'noClickBike' : 'clickBike';
+  const appClass = darkMode ? "appDark" : "appLight";
+  const buttonText= darkMode ? "Dark" : "Light";
+  
+  
 
 
   return (

@@ -1,23 +1,26 @@
 import React, {useState} from "react";
 
-function NewCommentForm({moto}) {
+function NewCommentForm({moto, addComment}) {
 
 
-const [comment, setComment] = useState();
+const [comment, setComment] = useState("");
+
+const handleComment = (e) => {
+  setComment(e.target.value)
+}
 
 
-function handleComment(e) {
+function handleSubmit(e) {
+  e.preventDefault()
   setComment(e.target.value);
   // console.log("ID", moto.id)
-  // console.log("COMMENT: ", moto.Comment)
-    }
 
-    const handleSubmit = (e) => {
-      e.preventDefault();
+  let comments = moto.Comments;  
+  comments.push(comment);
+  // console.log("new comments : ", comments);
 
       const formData = {
-      id: `${moto}`,
-      Comment: `${comment}`
+        Comments: comments
       }
       fetch(`http://localhost:3001/motor/${moto.id}`, {
         method: 'PATCH',
@@ -28,17 +31,20 @@ function handleComment(e) {
         body: JSON.stringify(formData)  
       })
       .then((r) => r.json())
-        .then(data => setComment(comment));
+        .then(newComment => {
+          // console.log("newComment ", newComment);
+          addComment(/*newComment, moto.id*/);
+        })
       }
     
   
 
     return (
-      <form className="review" onSubmit={handleSubmit} >
-      <p>{comment}</p>  
-  <textarea 
+      <form className="new-comment-form" onSubmit={handleSubmit} >
+      <label>Review</label>
           placeholder="Write experience here"
           rows={10}
+          value={comment}
           onChange={handleComment}
         />
         <div> <input type="submit" value="Submit experience" />
