@@ -12,11 +12,14 @@ const display = 5;
 
 
 function App() {
+  
+  
   const API = "http://localhost:3001/motor";
 
   const [ motor, setMotor ] = useState ([]);
   const [startBikes, setStartBikes] = useState([]);
   const [isDisabled, setIsDisabled] = useState(false)
+  const [darkMode, setDarkMode] = useState(false);
 
 
   useEffect(() => {
@@ -28,7 +31,10 @@ function App() {
   }, []);
 
 
-
+  function handleClick (){
+  setDarkMode((darkMode) => !darkMode);
+  } 
+  
   function nextBikes() {
     setStartBikes((startBikes + display) % motor.length)
   }
@@ -54,27 +60,36 @@ function App() {
     setMotor(motor.map(moto => id === motor.id ? {...moto, comment:{newComment}} : moto)
     )}
 
-    return (
-      <div>
-        <Header />
-        <div className="divider"></div>
-        <InfoContainer motor={
-          motor.filter(moto=>moto.selected)} 
-          recommendedRoute={recommendedRoute} 
-          motoTrip={motor.filter(moto=>moto.selectedForTrip)} 
-          resetBikes={resetBikes}
-          disableClick={disableClick}
-          addComment={addComment}
-          />
-        <MotorcycleContainer 
-          motor={motor.slice(startBikes, startBikes + display)} 
-          nextBikes={nextBikes} 
-          handleClick={selectBikes}
-          disableClick={disableClick}
-          className={className}
-          />
-      </div>
-    );
+  
+  const className = isDisabled ? 'noClickBike' : 'clickBike';
+  const appClass = darkMode ? "appDark" : "appLight";
+  const buttonText= darkMode ? "Dark" : "Light";
+  
+  
+
+
+  return (
+    <div className = {appClass}>
+      <button onClick={handleClick} > {buttonText} Mode</button>
+      <Header />
+      <div></div>
+      <InfoContainer motor={
+        motor.filter(moto=>moto.selected)} 
+        recommendedRoute={recommendedRoute} 
+        motoTrip={motor.filter(moto=>moto.selectedForTrip)} 
+        resetBikes={resetBikes}
+        disableClick={disableClick}
+        />
+      <MotorcycleContainer 
+        motor={motor.slice(startBikes, startBikes + display)} 
+        nextBikes={nextBikes} 
+        handleClick={selectBikes}
+        disableClick={disableClick}
+        className={className}
+        appClass={appClass}
+        />
+    </div>
+  );
 };
 
 export default App;

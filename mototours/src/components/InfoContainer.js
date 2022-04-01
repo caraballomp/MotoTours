@@ -8,7 +8,7 @@ function InfoContainer ({motor, motoTrip, recommendedRoute, resetBikes, disableC
 
     return (
         <div className="bikeInfo">
-            <div className="container">
+            <div className="container-info">
 
                 <div className="row">
                     <div className="six columns">

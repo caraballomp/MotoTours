@@ -1,16 +1,25 @@
+.appDark{
+  /* --font-color: rgb(255, 255, 255);
+  --background-color:rgb(50, 50, 50);
+  --background--light: rgb(80, 80, 80);
+  transition: all 0.4s; */
 
+background-color: black;
+/* grid-area: bt;
+display: flex;
+justify-content: space-evenly;
+width: 100%; */
+}
 
-/* .App-header {
-  text-align: center;
-  background-color: lightslategray;
-  min-height: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(30px + 2vmin);
-  font-family:"Gill Sans", sans-serif;
-  color: grayscale;
-} */
+.appLight{
+
+background-color: mintcream;
+/* grid-area: bt;
+display: flex;
+justify-content: space-evenly;
+width: 100%; */
+}
+
 
 .motors{
 
@@ -22,6 +31,12 @@
   align-items:space-between;
   justify-content:space-between;
   flex-wrap:wrap;
+}
+
+
+.container-info{
+  background-color:#fffafa	;
+  background-size: 100%;
 }
 
 .motor-container {
@@ -45,6 +60,7 @@
   background-size: 100%;
   color: white
 }
+
 .title{
   color: #4db1bc;
   margin: 0;
@@ -54,9 +70,9 @@
   align-items: center;
   justify-items: center;
   font-size: 10rem;
-  text-shadow: 0 0 20px #2d9da9;
-  text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
-}
+  text-shadow: 0 0 50px #2d9da9;
+  text-shadow: 0 0 30px #34b3c1, 0 0 60px #4dbbc7;}
+
 
 .mainhead h2 {
   font-weight: bold;
@@ -87,16 +103,21 @@
   flex-wrap:wrap;
 }
 
+.review{
+  display:grid;
+  align-items:space-between;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
 .trip-info{
   position:relative;
 
 }
 
-.divider {
-  height: 15px;
-  width: 100%;
-  background-color: black;
-}
+/* .divider {
+ 
+} */
 
 .noClickBike {
   pointer-events: none;
